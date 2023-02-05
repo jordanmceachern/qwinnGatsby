@@ -86,6 +86,36 @@ body {
   color: white;
 }
 
+.Error {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Error a {
+  text-decoration: none;
+  height: 30px;
+  color: inherit;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.Error a:hover {
+  box-shadow: 0 4px 4px -4px var(--main-font-color, black);
+}
+.Error .Error-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  max-width: 375px;
+}
+.Error .Error-message p {
+  margin: 4px 0;
+}
+
 #facebook {
   margin: 7px 7px;
   height: 36px !important;
