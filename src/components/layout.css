@@ -6,11 +6,13 @@
 .light {
   --main-font-color: black;
   --main-bg-color: white;
+  --rgb-background-color: rgba(255, 255, 255, 0.4);
 }
 
 .dark {
   --main-font-color: white;
   --main-bg-color: black;
+  --rgb-background-color: rgba(0, 0, 0, 0.4);
 }
 
 @font-face {

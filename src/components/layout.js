@@ -28,7 +28,7 @@ const Layout = () => {
             <hr />
           </div>
           <Link id='home' to='/'>
-            brittany mcquinn
+            qwinn
           </Link>
         </div>
         <Link
@@ -68,7 +68,9 @@ const Layout = () => {
 
       <div
         className='background'
-        // style={{ background: `center / cover no-repeat url()` }}
+        style={{
+          background: `center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675637511/qwinn/qwinn_awmtfe.jpg)`,
+        }}
       ></div>
 
       <div id='footer'>
