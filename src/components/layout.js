@@ -2,16 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import DarkMode from './darkMode/darkMode';
 import './layout.css';
-import appleMusic from './appleMusic.png';
-import soundCloud from './soundCloud.png';
-import discord from './discord.png';
-import spotify from './spotify.png';
-import tiktok from './tiktok.png';
-import youtube from './youtube.png';
-import facebook from './facebook.png';
-import instagram from './instagram.png';
-import twitter from './twitter.png';
-import logo from './qwinnlogo.png';
 
 const Layout = () => {
   const toggleHandler = () => {
@@ -32,7 +22,8 @@ const Layout = () => {
             <div
               className='qwinnlink'
               style={{
-                background: `center / cover no-repeat url(${logo})`,
+                background:
+                  'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893511/qwinn/qwinnlogo_emyfr2.png)',
               }}
             ></div>
           </Link>
@@ -85,47 +76,47 @@ const Layout = () => {
             {
               href: 'https://music.apple.com/ca/artist/qwinn/1541048283',
               name: 'apple music',
-              src: appleMusic,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893495/qwinn/appleMusic_qjfxem.png',
             },
             {
               href: 'https://soundcloud.com/qwinncreates',
               name: 'soundcloud',
-              src: soundCloud,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893519/qwinn/soundcloud_h67ltj.png',
             },
             {
               href: 'https://discord.gg/tgHrxVUEJA',
               name: 'discord',
-              src: discord,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893498/qwinn/discord_rz5g84.png',
             },
             {
               href: 'https://open.spotify.com/artist/7LUgWAmGi0JiTUGtskeLd5?si=UaU6zM4XRkab4uhEG_2gCg',
               name: 'spotify',
-              src: spotify,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893525/qwinn/spotify_rgagnv.png',
             },
             {
               href: 'https://www.tiktok.com/@qwinncreates?lang=en',
               name: 'tiktok',
-              src: tiktok,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893529/qwinn/tiktok_uoilxa.png',
             },
             {
               href: 'https://facebook.com/qwinncreates',
               name: 'facebook',
-              src: facebook,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675894655/qwinn/facebook_hlfrkh.png',
             },
             {
               href: 'https://www.instagram.com/brittanymcquinn/?hl=en',
               name: 'instagram',
-              src: instagram,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893504/qwinn/instagram_kxgg9b.png',
             },
             {
               href: 'https://twitter.com/brittanymcquinn',
               name: 'twitter',
-              src: twitter,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893533/qwinn/twitter_mhizj5.png',
             },
             {
               href: 'https://www.youtube.com/user/BrittanyMcQuinn',
               name: 'youtube',
-              src: youtube,
+              src: 'https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893537/qwinn/youtube_wkykc9.png',
             },
           ].map(({ href, name, src }) => (
             <div className='links'>
