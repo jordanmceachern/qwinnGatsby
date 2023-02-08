@@ -16,7 +16,9 @@ const DarkMode = () => {
       const darkMode = window.localStorage.getItem('dark-mode');
       if (darkMode === 'true') {
         darkModeOn();
-        toggleDarkStyles();
+        if (!mode.classList.contains('dark')) {
+          toggleDarkStyles();
+        }
       } else {
         darkModeOff();
       }
