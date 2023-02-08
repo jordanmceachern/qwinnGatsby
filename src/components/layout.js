@@ -11,6 +11,7 @@ import youtube from './youtube.png';
 import facebook from './facebook.png';
 import instagram from './instagram.png';
 import twitter from './twitter.png';
+import logo from './qwinnlogo.png';
 
 const Layout = () => {
   const toggleHandler = () => {
@@ -28,7 +29,12 @@ const Layout = () => {
             <hr />
           </div>
           <Link id='home' to='/'>
-            qwinn
+            <div
+              className='qwinnlink'
+              style={{
+                background: `center / cover no-repeat url(${logo})`,
+              }}
+            ></div>
           </Link>
         </div>
         <Link
@@ -48,12 +54,12 @@ const Layout = () => {
           lyrics
         </Link>
         <Link
-          id='shows'
+          id='merch'
           className='heading mobile hideThis'
-          to='/shows'
+          to='/merch'
           onClick={toggleHandler}
         >
-          shows
+          merch
         </Link>
         <Link
           id='contact'

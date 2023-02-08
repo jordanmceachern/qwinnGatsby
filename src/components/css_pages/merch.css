@@ -1,0 +1,27 @@
+#merchInfo {
+  overflow-y: scroll;
+  margin: 50px 0 50px 0;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
+  z-index: 1;
+}
+#merchInfo a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+#merchInfo a:hover {
+  background-color: var(--rgb-background-color-dark, rgba(255, 255, 255, 0.4));
+  text-decoration: underline;
+}

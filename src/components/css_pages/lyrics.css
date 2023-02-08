@@ -6,10 +6,11 @@
   overflow-y: scroll;
   margin: 50px 0 50px 0;
   height: 100%;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
   z-index: 1;
 }
 
@@ -18,9 +19,6 @@
   height: min-content;
   padding: 0 24px;
   border-radius: 24px;
-  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
-  box-shadow: 0 0 48px 48px
-    var(--rgb-background-color, rgba(255, 255, 255, 0.4));
 }
 
 #lyricsInfo #songs p {
@@ -32,7 +30,7 @@
 
 #lyricsInfo #songs div {
   width: 100%;
-  font-family: 'ogirema-bold';
+  font-family: 'montserrat-bold';
   font-size: 16px;
   text-align: center;
   margin: 10px 0;
@@ -46,7 +44,7 @@
 #lyricsInfo #songs div p {
   width: 100%;
   font-size: 16px;
-  font-family: 'ogirema';
+  font-family: 'montserrat';
   text-align: center;
   margin: 2px 0 0 0;
 }
@@ -59,7 +57,7 @@
 #lyricsInfo div h4 {
   font-size: 16px;
   margin: 20px 0 0 0;
-  font-family: 'ogirema' !important;
+  font-family: 'montserrat' !important;
   font-weight: unset;
 }
 

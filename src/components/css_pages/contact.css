@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
   z-index: 1;
 }
 
@@ -24,9 +25,6 @@
   align-items: center;
   padding: 24px;
   border-radius: 24px;
-  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
-  box-shadow: 0 0 48px 48px
-    var(--rgb-background-color, rgba(255, 255, 255, 0.4));
 }
 
 #contactInfo div p {

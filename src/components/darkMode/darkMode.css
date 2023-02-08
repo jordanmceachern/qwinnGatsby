@@ -1,50 +1,52 @@
 .darkMode {
-    height: 30px;
-    width: 140px;
-    min-width: 140px;
-    font-size: 20px;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-evenly
+  height: 30px;
+  width: 140px;
+  min-width: 210px;
+  font-size: 20px;
+  display: flex !important;
+  flex-wrap: nowrap;
+  font-family: 'horizon', sans-serif;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .toggle-btn {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    background: var(--main-font-color, black);
-    border-radius: 15px;
-    padding: 2px;
-    transition: all 300ms ease-in-out
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: var(--main-font-color, black);
+  border-radius: 15px;
+  padding: 2px;
+  transition: all 300ms ease-in-out;
 }
 
 .toggle-btn.active {
-    background: var(--main-font-color, black);
+  background: var(--main-font-color, black);
 }
 
 .toggle-btn .inner-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--main-bg-color, white);
-    transition: all 300ms ease-in-out
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--main-bg-color, white);
+  transition: all 300ms ease-in-out;
 }
 
 .toggle-btn.active .inner-circle {
-    margin-left: 20px
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-    .darkMode {
-        top: 80%;
-        height: 50px;
-        border-top: unset !important
-    }
+  .darkMode {
+    top: 80%;
+    height: 50px;
+    border-top: unset !important;
+  }
 
-    #dark {
-        width: 100%;
-        box-shadow: 0 1px 1px var(--main-font-color, black);
-        display: flex;
-        justify-content: center;
-    }
+  #dark {
+    width: 100%;
+    box-shadow: 0 1px 1px var(--main-font-color, black);
+    display: flex;
+    justify-content: center;
+  }
 }

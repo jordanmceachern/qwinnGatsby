@@ -7,27 +7,29 @@
   --main-font-color: black;
   --main-bg-color: white;
   --rgb-background-color: rgba(255, 255, 255, 0.4);
+  --rgb-background-color-dark: rgba(0, 0, 0, 0.3);
 }
 
 .dark {
   --main-font-color: white;
   --main-bg-color: black;
-  --rgb-background-color: rgba(0, 0, 0, 0.4);
+  --rgb-background-color: rgba(0, 0, 0, 0.3);
+  --rgb-background-color-dark: rgba(255, 255, 255, 0.4);
 }
 
 @font-face {
-  font-family: 'ogirema';
+  font-family: 'montserrat';
+  src: url('./Montserrat/Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('./Montserrat/MontserratBold.ttf');
+}
+
+@font-face {
+  font-family: 'horizon';
   src: url('./ogirema/Ogirema.ttf');
-}
-
-@font-face {
-  font-family: 'ogirema-bold';
-  src: url('./ogirema/OgiremaBold.ttf');
-}
-
-@font-face {
-  font-family: 'ogirema-italic';
-  src: url('./ogirema/OgiremaItalic.ttf');
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +58,7 @@
 }
 
 body {
-  font-family: 'ogirema', sans-serif;
+  font-family: 'montserrat', sans-serif;
   color: var(--main-font-color, black);
   background: var(--main-bg-color, white);
   overflow: hidden;
@@ -157,6 +159,7 @@ body {
 .heading {
   text-decoration: none;
   color: inherit;
+  font-family: 'horizon', sans-serif;
   width: 75px;
   height: 30px;
   font-size: 20px;
@@ -178,9 +181,9 @@ body {
   line-height: 0.8;
   text-align: center;
   text-decoration: none;
-  color: inherit;
-  padding-bottom: 5px;
   width: 75px;
+  background-color: var(--rgb-background-color-dark, rgba(0, 0, 0, 0.3));
+  border-radius: 2px;
 }
 
 nav {
@@ -195,6 +198,10 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   background: var(--main-bg-color, white);
+}
+
+.qwinnlink {
+  height: 30px;
 }
 
 @media only screen and (max-width: 600px) {
