@@ -160,7 +160,6 @@ body {
   text-decoration: none;
   color: inherit;
   font-family: 'horizon', sans-serif;
-  width: 75px;
   height: 30px;
   font-size: 20px;
   display: flex !important;
@@ -212,11 +211,10 @@ nav {
     left: 10px;
     justify-content: space-evenly;
     align-items: center;
-    height: 30px;
+    height: 31px;
     width: 30px;
     padding: 4px;
     background: var(--main-bg-color, white);
-    border: 1px solid var(--main-font-color, black);
     border-radius: 3px;
   }
   #hamburger hr {

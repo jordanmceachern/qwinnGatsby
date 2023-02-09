@@ -26,5 +26,9 @@
 @media only screen and (max-width: 600px) {
   #bioInfo {
     margin: 50px 0 100px 0;
+    text-align: left;
+  }
+  #bioInfo p {
+    text-align: left;
   }
 }

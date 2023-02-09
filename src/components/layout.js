@@ -53,6 +53,14 @@ const Layout = () => {
           merch
         </Link>
         <Link
+          id='subscribe'
+          className='heading mobile hideThis'
+          to='/subscribe'
+          onClick={toggleHandler}
+        >
+          subscribe
+        </Link>
+        <Link
           id='contact'
           className='heading mobile hideThis'
           to='/contact'
