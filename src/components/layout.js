@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
           to='/bio'
           onClick={toggleHandler}
         >
-          bio
+          BIO
         </Link>
         <Link
           id='lyrics'
@@ -68,23 +68,24 @@ const Layout = ({ children }) => {
           to='/lyrics'
           onClick={toggleHandler}
         >
-          lyrics
+          LYRICS
         </Link>
-        <Link
-          id='merch'
+        <a
+          aria-label='link to shopify store'
           className='heading mobile hideThis'
-          to='/merch'
-          onClick={toggleHandler}
+          href='https://qwinnmerch.myshopify.com/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          merch
-        </Link>
+          MERCH
+        </a>
         <Link
           id='subscribe'
           className='heading mobile hideThis'
           to='/subscribe'
           onClick={toggleHandler}
         >
-          subscribe
+          SUBSCRIBE
         </Link>
         <Link
           id='contact'
@@ -92,7 +93,7 @@ const Layout = ({ children }) => {
           to='/contact'
           onClick={toggleHandler}
         >
-          contact
+          CONTACT
         </Link>
         <DarkMode />
       </nav>

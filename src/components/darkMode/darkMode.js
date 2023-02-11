@@ -56,7 +56,7 @@ const DarkMode = () => {
   return (
     <div id='dark'>
       <div className='darkMode mobile hideThis'>
-        dark mode
+        DARK MODE
         <div className={title} id='toggle-btn' onClick={onClickHandler}>
           <div className='inner-circle' id='inner-circle' />
         </div>

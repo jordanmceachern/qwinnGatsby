@@ -1,11 +1,12 @@
 .darkMode {
   height: 30px;
-  width: 140px;
-  min-width: 210px;
+  width: 150px;
+  min-width: 150px;
   font-size: 20px;
   display: flex !important;
   flex-wrap: nowrap;
-  font-family: 'horizon', sans-serif;
+  font-family: 'anton', sans-serif;
+  letter-spacing: 2px;
   align-items: center;
   justify-content: space-evenly;
 }

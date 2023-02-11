@@ -20,7 +20,7 @@ const Lyrics = () => {
       <div id='lyricsInfo'>
         <div id='songs'>
           <div id='welcome' onClick={hideHandler}>
-            Welcome to my life
+            Welcome to My Life
             <div className='song hide' id='welcometo'>
               <p>Do you wanna fight me?</p>
               <p>I’m ready</p>
@@ -274,7 +274,7 @@ const Lyrics = () => {
           </div>
 
           <div id='edit' onClick={hideHandler}>
-            Edit my love
+            Edit My Love
             <div className='song hide' id='editmy'>
               <p>I am myself</p>
               <p>Try to change me</p>
