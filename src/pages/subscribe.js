@@ -4,8 +4,7 @@ import Layout from '../components/layout';
 
 const Subscribe = () => {
   return (
-    <div className='App'>
-      <Layout />
+    <Layout>
       <div id='subscribeInfo'>
         <a
           href='https://qwinnmerch.myshopify.com/'
@@ -15,7 +14,7 @@ const Subscribe = () => {
           subscribe
         </a>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -4,8 +4,7 @@ import Layout from '../components/layout';
 
 const Bio = () => {
   return (
-    <div className='App'>
-      <Layout />
+    <Layout>
       <div id='bioInfo'>
         <p>
           Britt McQuinn (qwinn) is an award-winning Canadian East Coast
@@ -26,7 +25,7 @@ const Bio = () => {
           Records, Kiwi Bear Records, and Monstercat.
         </p>
       </div>
-    </div>
+    </Layout>
   );
 };
 

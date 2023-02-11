@@ -4,8 +4,7 @@ import Layout from '../components/layout';
 
 const Contact = () => {
   return (
-    <div className='App'>
-      <Layout />
+    <Layout>
       <div id='contactInfo'>
         <div>
           <p id='brittContact'>
@@ -20,7 +19,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -4,8 +4,7 @@ import Layout from '../components/layout';
 
 const Merch = () => {
   return (
-    <div className='App'>
-      <Layout />
+    <Layout>
       <div id='merchInfo'>
         <a
           href='https://qwinnmerch.myshopify.com/'
@@ -19,7 +18,7 @@ const Merch = () => {
           shop
         </a>
       </div>
-    </div>
+    </Layout>
   );
 };
 

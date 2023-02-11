@@ -16,8 +16,7 @@ const Lyrics = () => {
   };
 
   return (
-    <div className='App'>
-      <Layout />
+    <Layout>
       <div id='lyricsInfo'>
         <div id='songs'>
           <div id='welcome' onClick={hideHandler}>
@@ -333,7 +332,7 @@ const Lyrics = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
