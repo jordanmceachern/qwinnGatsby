@@ -10,18 +10,98 @@
   background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
   z-index: 1;
 }
-#subscribeInfo a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 20px;
+
+#subscribeInfo h1 {
+  font-size: 24px;
+  font-family: montserrat-bold;
+  margin: 0 10px 40px;
+  max-width: 580px;
+  text-align: center;
+  line-height: 2rem;
 }
 
-#subscribeInfo a:hover {
-  background-color: var(--rgb-background-color-dark, rgba(255, 255, 255, 0.4));
-  text-decoration: underline;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+form input {
+  width: calc(100% - 50px);
+  max-width: 480px;
+  border-radius: 0.25rem;
+  border: none;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  font-family: montserrat;
+  font-size: 16px;
+  color: var(--main-bg-color, white);
+  background-color: var(--rgb-background-color-dark, rgba(0, 0, 0, 0.3));
+}
+
+form input::placeholder {
+  color: var(--rgb-background-color-light, rgba(255, 255, 255, 0.7));
+}
+
+.submit-button-container {
+  display: flex;
+  border-radius: 0.25rem;
+}
+
+.submit-button-container input {
+  font-family: montserrat;
+  font-size: 16px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  width: min-content;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 0.25rem;
+  color: var(--main-bg-color, white);
+  background-color: var(--main-font-color, black);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.submit-button-container input:hover,
+.submit-button-container input:active {
+  background-color: var(--rgb-background-color-dark, rgba(0, 0, 0, 0.3));
+}
+
+.input-error {
+  text-align: left;
+  color: rgb(255, 0, 0);
+  padding: 0 5px;
+}
+
+.message-sent {
+  text-align: left;
+  color: rgb(0, 255, 0);
+  padding: 0 5px;
+}
+
+.message-helper {
+  text-align: center;
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #subscribeInfo {
+    padding-top: 100px;
+    justify-content: flex-start;
+  }
+
+  .contact-form {
+    margin: 0 0 100px;
+  }
 }

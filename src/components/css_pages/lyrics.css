@@ -30,7 +30,7 @@
 
 #lyricsInfo #songs div {
   width: 100%;
-  font-family: 'montserrat-bold';
+  font-family: montserrat-bold;
   font-size: 16px;
   text-align: center;
   margin: 10px 0;
@@ -44,7 +44,7 @@
 #lyricsInfo #songs div p {
   width: 100%;
   font-size: 16px;
-  font-family: 'montserrat';
+  font-family: montserrat;
   text-align: center;
   margin: 2px 0 0 0;
 }
@@ -57,7 +57,7 @@
 #lyricsInfo div h4 {
   font-size: 16px;
   margin: 20px 0 0 0;
-  font-family: 'montserrat' !important;
+  font-family: montserrat !important;
   font-weight: unset;
 }
 
