@@ -1,6 +1,6 @@
 #bioInfo {
   overflow-y: scroll;
-  margin: 50px 0 50px 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,10 +24,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #bioInfo {
-    margin: 50px 0 100px 0;
-    text-align: left;
-  }
+  #bioInfo,
   #bioInfo p {
     text-align: left;
   }

@@ -16,15 +16,17 @@ const Subscribe = () => {
 
   const qwinn_subscribed = 'qwinn-subscribed';
   useEffect(() => {
-    const isSubscribed = window.localStorage.getItem(qwinn_subscribed);
+    if (window) {
+      const isSubscribed = window.localStorage.getItem(qwinn_subscribed);
 
-    if (isSubscribed === 'true') {
-      setSubscribed(true);
+      if (isSubscribed === 'true') {
+        setSubscribed(true);
+      }
     }
   }, []);
 
   const setEmailSubscribed = () =>
-    window.localStorage.setItem(qwinn_subscribed, true);
+    window?.localStorage.setItem(qwinn_subscribed, true);
 
   const updateValue = (e) => {
     e.preventDefault();

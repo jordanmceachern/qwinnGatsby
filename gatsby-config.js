@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 const mailchimp = require('@mailchimp/mailchimp_marketing');
 
 mailchimp.setConfig({
@@ -12,7 +8,7 @@ mailchimp.setConfig({
 module.exports = {
   siteMetadata: {
     title: 'qwinn',
-    siteUrl: process.env.SITE_URL,
+    siteUrl: 'https://qwinn.ca',
     description: `Britt McQuinn (qwinn) is an award-winning Canadian East Coast
     singer/songwriter. Her early musical influences of film and video game
     soundtracks have shaped the synth-pop sound that audiences know today.

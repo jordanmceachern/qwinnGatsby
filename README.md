@@ -1,12 +1,16 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# qwinn-gatsby
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Gatsby app that composes the qwinn web application.
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
+To begin:
 
-## Running in development
-`gatsby develop`
+- Install node_modules by running "npm install".
+- Run in development with "npm start". To use the subscribe widget in development, you'll need to add the mailchimp api credentials locally in the root ".env.development" file.
+- Build the application and push changes to the gh-pages branch with "npm run deploy". Push changes to master seperately.
+
+Notes:
+
+- Node and Gatsby versions you are running can affect the ability the build, run, and deploy. Currently, be sure to use gatsby@5 and node@18.
+- For HTTPS certification to be provided by Github, the "A" DNS providers with 4 associated IPs (e.g. 185.199.108.153 is for enabling Github's https) must be set as priority on the domain name provider's service.
+- Production changes are currently set to be built from the public directory of the gh-pages branch.
+- New deploys must be manually kicked-off on Github by unpublishing the previous build.

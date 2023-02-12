@@ -3,14 +3,17 @@ import './darkMode.css';
 
 const DarkMode = () => {
   const [title, setTitle] = useState('');
-  const mode = document.querySelector('html');
+  let mode;
+  if (typeof window !== 'undefined') {
+    mode = document.querySelector('html');
+  }
   const darkModeOff = () => setTitle('toggle-btn');
   const darkModeOn = () => setTitle('toggle-btn active');
   const toggleLightStyles = () => mode.classList.toggle('light');
   const toggleDarkStyles = () => mode.classList.toggle('dark');
 
   useEffect(() => {
-    if (window === undefined) {
+    if (typeof window === 'undefined') {
       setTitle('toggle-btn');
     } else {
       const darkMode = window.localStorage.getItem('dark-mode');
@@ -23,7 +26,7 @@ const DarkMode = () => {
         darkModeOff();
       }
     }
-  }, []);
+  });
 
   const toggleMode = () => {
     toggleLightStyles();
@@ -31,13 +34,13 @@ const DarkMode = () => {
   };
 
   const saveDarkModeOn = () => {
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       window.localStorage.setItem('dark-mode', true);
     }
   };
 
   const saveDarkModeOff = () => {
-    if (window !== undefined) {
+    if (typeof window !== 'undefined') {
       window.localStorage.setItem('dark-mode', false);
     }
   };

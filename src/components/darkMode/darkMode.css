@@ -5,7 +5,7 @@
   font-size: 20px;
   display: flex !important;
   flex-wrap: nowrap;
-  font-family: anton, sans-serif;
+  font-family: 'anton', sans-serif;
   letter-spacing: 2px;
   align-items: center;
   justify-content: space-evenly;

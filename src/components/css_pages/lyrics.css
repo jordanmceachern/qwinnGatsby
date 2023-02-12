@@ -4,9 +4,9 @@
 
 #lyricsInfo {
   overflow-y: scroll;
-  margin: 50px 0 50px 0;
   height: 100%;
   width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +15,10 @@
 }
 
 #lyricsInfo #songs {
-  margin-bottom: 50px;
   height: min-content;
   padding: 0 24px;
   border-radius: 24px;
+  margin-bottom: 50px;
 }
 
 #lyricsInfo #songs p {
@@ -30,7 +30,7 @@
 
 #lyricsInfo #songs div {
   width: 100%;
-  font-family: montserrat-bold;
+  font-family: 'montserrat-bold';
   font-size: 16px;
   text-align: center;
   margin: 10px 0;
@@ -57,7 +57,7 @@
 #lyricsInfo div h4 {
   font-size: 16px;
   margin: 20px 0 0 0;
-  font-family: montserrat !important;
+  font-family: 'montserrat' !important;
   font-weight: unset;
 }
 
@@ -73,10 +73,4 @@
 
 #lyricsInfo a:hover {
   box-shadow: 0 4px 4px -4px var(--main-font-color, black);
-}
-
-@media only screen and (max-width: 600px) {
-  #lyricsInfo {
-    margin: 50px 0 100px 0;
-  }
 }
