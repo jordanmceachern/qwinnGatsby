@@ -23,10 +23,11 @@
   "static/Anton.ttf": "static/Anton-170b842f9a8cd6150a0d5777704b3f5a.ttf",
   "static/Montserrat.ttf": "static/Montserrat-ceb11275ab638627a64310000e9446ec.ttf",
   "static/MontserratBold.ttf": "static/MontserratBold-2c155811b35513d5beaad6b1b4b6a99c.ttf",
-  "styles.css": "styles.08d4719c7186f1ae783a.css",
+  "styles.css": "styles.6bae87fe5a4e486bb7af.css",
+  "webpack-runtime-0c316d79e748e51bb6fd.js.map": "webpack-runtime-0c316d79e748e51bb6fd.js.map",
   "webpack-runtime-2d0d412131f4a07940e8.js.map": "webpack-runtime-2d0d412131f4a07940e8.js.map",
   "webpack-runtime-61578250ec7bd71dbeaf.js.map": "webpack-runtime-61578250ec7bd71dbeaf.js.map",
   "webpack-runtime-b53ffba9ff922cf0d6fa.js.map": "webpack-runtime-b53ffba9ff922cf0d6fa.js.map",
   "webpack-runtime-fa1be1d4346556a84625.js.map": "webpack-runtime-fa1be1d4346556a84625.js.map",
-  "webpack-runtime.js": "webpack-runtime-fa1be1d4346556a84625.js"
+  "webpack-runtime.js": "webpack-runtime-0c316d79e748e51bb6fd.js"
 }
