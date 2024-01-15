@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../components/css_pages/lyrics.css';
-import Layout from '../components/layout';
+import PageLayout from '../components/PageLayout';
 
-const Lyrics = () => {
+const Lyrics = ({ location }) => {
   const hideHandler = (e) => {
     const element = document.getElementById(e.target.id);
     if (element === null) {
@@ -16,7 +16,7 @@ const Lyrics = () => {
   };
 
   return (
-    <Layout>
+    <PageLayout currentPathname={location.pathname}>
       <div id='lyricsInfo'>
         <div id='songs'>
           <div id='welcome' onClick={hideHandler}>
@@ -332,7 +332,7 @@ const Lyrics = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import '../components/css_pages/contact.css';
-import Layout from '../components/layout';
+import PageLayout from '../components/PageLayout';
 
-const Contact = () => {
+const Contact = ({ location }) => {
   return (
-    <Layout>
+    <PageLayout currentPathname={location.pathname}>
       <div id='contactInfo'>
         <div>
           <p id='brittContact'>
@@ -19,7 +19,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 

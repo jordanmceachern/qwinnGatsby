@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../components/css_pages/subscribe.css';
-import Layout from '../components/layout';
+import PageLayout from '../components/PageLayout';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const Subscribe = () => {
@@ -9,7 +9,7 @@ const Subscribe = () => {
   const [personLastName, setLastName] = useState('');
   const [personEmail, setEmail] = useState('');
   const [inputError, setInputError] = useState(false);
-  const [messageSent, setMessageSent] = useState(false);
+  const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
   const [helperText, setHelperText] = useState('you can opt-out anytime');
@@ -26,7 +26,7 @@ const Subscribe = () => {
   }, []);
 
   const setEmailSubscribed = () =>
-    window?.localStorage.setItem(qwinn_subscribed, true);
+    window?.localStorage.setItem(qwinn_subscribed, 'true');
 
   const updateValue = (e) => {
     e.preventDefault();
@@ -86,7 +86,7 @@ const Subscribe = () => {
   };
 
   return (
-    <Layout>
+    <PageLayout currentPathname={location.pathname}>
       <div id='subscribeInfo'>
         <h1>
           Sign up to our mailing list to catch all the latest on upcoming
@@ -100,7 +100,7 @@ const Subscribe = () => {
               name='personName'
               value={personName}
               onChange={updateValue}
-              minLength='3'
+              minLength={3}
               required
             />
             <input
@@ -109,7 +109,7 @@ const Subscribe = () => {
               name='personLastName'
               value={personLastName}
               onChange={updateValue}
-              minLength='3'
+              minLength={3}
               required
             />
             <input
@@ -131,7 +131,7 @@ const Subscribe = () => {
           </form>
         </div>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 

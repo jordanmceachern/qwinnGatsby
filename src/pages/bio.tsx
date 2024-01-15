@@ -1,10 +1,10 @@
 import React from 'react';
 import '../components/css_pages/bio.css';
-import Layout from '../components/layout';
+import PageLayout from '../components/PageLayout';
 
-const Bio = () => {
+const Bio = ({ location }) => {
   return (
-    <Layout>
+    <PageLayout currentPathname={location.pathname}>
       <div id='bioInfo'>
         <p>
           Britt McQuinn (qwinn) is an award-winning Canadian East Coast
@@ -25,7 +25,7 @@ const Bio = () => {
           Records, Kiwi Bear Records, and Monstercat.
         </p>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 
