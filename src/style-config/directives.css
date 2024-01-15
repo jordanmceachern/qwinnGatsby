@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'oswald';
-  src: url('./Oswald.ttf');
+  font-family: 'montserrat';
+  src: url('./Fonts/Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('./Fonts/MontserratBold.ttf');
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('./Fonts/Anton.ttf');
 }
 
 body {
-  font-family: 'oswald', sans-serif;
+  font-family: 'montserrat', sans-serif;
 }
 
 .scroll-vertical::-webkit-scrollbar,

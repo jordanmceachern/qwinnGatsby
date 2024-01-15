@@ -1,11 +1,10 @@
 import React from 'react';
-import '../components/css_pages/bio.css';
 import PageLayout from '../components/PageLayout';
 
 const Bio = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div id='bioInfo'>
+      <div>
         <p>
           Britt McQuinn (qwinn) is an award-winning Canadian East Coast
           singer/songwriter. Her early musical influences of film and video game

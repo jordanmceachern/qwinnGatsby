@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import '../components/css_pages/subscribe.css';
 import PageLayout from '../components/PageLayout';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
@@ -87,12 +86,12 @@ const Subscribe = () => {
 
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div id='subscribeInfo'>
+      <div>
         <h1>
           Sign up to our mailing list to catch all the latest on upcoming
           releases and more!
         </h1>
-        <div className='contact-form'>
+        <div>
           <form ref={formRef} onSubmit={signup}>
             <input
               type='text'
@@ -120,12 +119,12 @@ const Subscribe = () => {
               onChange={updateValue}
               required
             />
-            {inputError && <p className='input-error'>{`${inputError}`}</p>}
-            {messageSent && <p className='message-sent'>{messageSent}</p>}
+            {inputError && <p>{`${inputError}`}</p>}
+            {messageSent && <p>{messageSent}</p>}
             {!inputError && !messageSent && (
-              <p className='message-helper'>{helperText}</p>
+              <p>{helperText}</p>
             )}
-            <div className='submit-button-container'>
+            <div>
               <input type='submit' value='subscribe' disabled={isDisabled} />
             </div>
           </form>

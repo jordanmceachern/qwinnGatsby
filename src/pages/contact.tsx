@@ -1,13 +1,12 @@
 import React from 'react';
-import '../components/css_pages/contact.css';
 import PageLayout from '../components/PageLayout';
 
 const Contact = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div id='contactInfo'>
+      <div>
         <div>
-          <p id='brittContact'>
+          <p>
             <a href='mailto:brittanymcquinn@gmail.com' target='_top'>
               General Inquiries
             </a>
