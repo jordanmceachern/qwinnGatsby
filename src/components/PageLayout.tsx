@@ -25,7 +25,7 @@ const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
         <MetaData />
         <Navigation currentRoutename={currentRoutename} />
         <div className='main-content z-10 flex flex-col justify-start grow overflow-y-auto bg-transparent'>
-          {children && (children)}
+          {children ? (children) : null}
         </div>
         <Footer />
       </div>

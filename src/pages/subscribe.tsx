@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import PageLayout from '../components/PageLayout';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
-const Subscribe = () => {
+const Subscribe = ({ location }) => {
   const formRef = useRef(null);
   const [personName, setName] = useState('');
   const [personLastName, setLastName] = useState('');

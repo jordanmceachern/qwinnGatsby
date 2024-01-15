@@ -60,25 +60,25 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
               </span>
             </Link>
             <Link
-              to='/information'
+              to='/bio'
               className={`${currentRoutename === 'bio' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               BIOGRAPHY
             </Link>
             <Link
-              to='/hapkido'
+              to='/contact'
               className={`${currentRoutename === 'contact' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               CONTACT
             </Link>
             <Link
-              to='/taekwondo'
+              to='/lyrics'
               className={`${currentRoutename === 'lyrics' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               LYRICS
             </Link>
             <Link
-              to='/kickboxing'
+              to='/subscribe'
               className={`${currentRoutename === 'subscribe' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               SUBSCRIBE

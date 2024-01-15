@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: 'montserrat';
-  src: url('./Fonts/Montserrat.ttf');
+  src: url('./Montserrat.ttf');
 }
 
 @font-face {
   font-family: 'montserrat-bold';
-  src: url('./Fonts/MontserratBold.ttf');
+  src: url('./MontserratBold.ttf');
 }
 
 @font-face {
   font-family: 'anton';
-  src: url('./Fonts/Anton.ttf');
+  src: url('./Anton.ttf');
 }
 
 body {
@@ -26,20 +26,14 @@ body {
   width: 0.5rem;
 }
 
-.murray-content::-webkit-scrollbar {
-  width: 0;
-}
-
 /* Track */
 .scroll-vertical::-webkit-scrollbar-track,
-.murray-content::-webkit-scrollbar-track,
 .main-content::-webkit-scrollbar-track {
   background: #000;
 }
 
 /* Handle */
 .scroll-vertical::-webkit-scrollbar-thumb,
-.murray-content::-webkit-scrollbar-thumb,
 .main-content::-webkit-scrollbar-thumb {
   background: #fff;
 }
