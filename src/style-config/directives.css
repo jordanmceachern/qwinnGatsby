@@ -21,6 +21,12 @@ body {
   font-family: 'montserrat', sans-serif;
 }
 
+.site-navigation,
+.site-navigation > * {
+  font-family: 'anton', sans-serif;
+  letter-spacing: 1px;
+}
+
 .scroll-vertical::-webkit-scrollbar,
 .main-content::-webkit-scrollbar {
   width: 0.5rem;
