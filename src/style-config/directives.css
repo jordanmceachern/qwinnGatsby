@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('./Montserrat.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('./MontserratBold.ttf');
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('./Anton.ttf');
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'montserrat-bold', sans-serif;
+}
+
+.site-navigation,
+.site-navigation > * {
+  font-family: 'anton', sans-serif;
+  letter-spacing: 1px;
+}
+
+.scroll-vertical::-webkit-scrollbar,
+.main-content::-webkit-scrollbar,
+.lyrics::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+.scroll-vertical::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track,
+.lyrics::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+.scroll-vertical::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb,
+.lyrics::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.mobile-menu:checked ~ nav > .nav-items {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.nav-items {
+  transition-property: margin-top, opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  margin-top: -212px;
+}
+
+.view-more {
+  display: flex;
+}
+
+.view-content-0,
+.view-content-1,
+.view-content-2,
+.view-content-3,
+.view-content-4,
+.view-content-5,
+.view-content-6,
+.view-content-7 {
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  height: 0;
+  max-height: 0;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  transition-property: height, max-height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+#view-more-less-0:checked ~ .view-content-0,
+#view-more-less-1:checked ~ .view-content-1,
+#view-more-less-2:checked ~ .view-content-2,
+#view-more-less-3:checked ~ .view-content-3,
+#view-more-less-4:checked ~ .view-content-4,
+#view-more-less-5:checked ~ .view-content-5,
+#view-more-less-6:checked ~ .view-content-6,
+#view-more-less-7:checked ~ .view-content-7 {
+  -webkit-line-clamp: unset;
+  text-overflow: initial;
+  height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+
+  transition-property: height, max-height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+#view-more-less-0:checked ~ .view-less-0,
+#view-more-less-1:checked ~ .view-less-1,
+#view-more-less-2:checked ~ .view-less-2,
+#view-more-less-3:checked ~ .view-less-3,
+#view-more-less-4:checked ~ .view-less-4,
+#view-more-less-5:checked ~ .view-less-5,
+#view-more-less-6:checked ~ .view-less-6,
+#view-more-less-7:checked ~ .view-less-7 {
+  display: flex;
+}
+
+#view-more-less-0:checked ~ .view-more-0,
+#view-more-less-1:checked ~ .view-more-1,
+#view-more-less-2:checked ~ .view-more-2,
+#view-more-less-3:checked ~ .view-more-3,
+#view-more-less-4:checked ~ .view-more-4,
+#view-more-less-5:checked ~ .view-more-5,
+#view-more-less-6:checked ~ .view-more-6,
+#view-more-less-7:checked ~ .view-more-7 {
+  display: none;
+}
