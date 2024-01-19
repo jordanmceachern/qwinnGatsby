@@ -21,10 +21,13 @@ body {
   font-family: 'montserrat', sans-serif;
 }
 
-.site-navigation,
-.site-navigation > *,
-.view-more-less,
+h1,
 h2 {
+  font-family: 'montserrat-bold', sans-serif;
+}
+
+.site-navigation,
+.site-navigation > * {
   font-family: 'anton', sans-serif;
   letter-spacing: 1px;
 }
@@ -58,7 +61,7 @@ h2 {
   transition-property: margin-top, opacity;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
-  margin-top: -183px;
+  margin-top: -212px;
 }
 
 .view-more {
@@ -75,11 +78,11 @@ h2 {
 .view-content-7 {
   text-overflow: ellipsis;
   overflow-y: hidden;
-  height: 6rem;
-  max-height: 6rem;
+  height: 0;
+  max-height: 0;
   white-space: initial;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 
   transition-property: height, max-height;

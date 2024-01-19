@@ -68,22 +68,31 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
               BIOGRAPHY
             </Link>
             <Link
-              to='/contact'
-              className={`${currentRoutename === 'contact' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto text-black dark:text-white border-black dark:border-white border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20 dark:hover:bg-white/20`}
-            >
-              CONTACT
-            </Link>
-            <Link
               to='/lyrics'
               className={`${currentRoutename === 'lyrics' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto text-black dark:text-white border-black dark:border-white border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20 dark:hover:bg-white/20`}
             >
               LYRICS
             </Link>
+            <a
+              aria-label='link to shopify store'
+              className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto text-black dark:text-white border-black dark:border-white border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20 dark:hover:bg-white/20'
+              href='https://qwinnmerch.myshopify.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              MERCH
+            </a>
             <Link
               to='/subscribe'
               className={`${currentRoutename === 'subscribe' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto text-black dark:text-white border-black dark:border-white border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20 dark:hover:bg-white/20`}
             >
               SUBSCRIBE
+            </Link>
+            <Link
+              to='/contact'
+              className={`${currentRoutename === 'contact' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto text-black dark:text-white border-black dark:border-white border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20 dark:hover:bg-white/20`}
+            >
+              CONTACT
             </Link>
           </div>
         </div>
