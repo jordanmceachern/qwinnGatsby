@@ -13,7 +13,7 @@ const Lyrics = ({ location }) => {
 
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div ref={contentRef} className='lyrics px-4 grid grid-cols-1 gap-4 md:grid-cols-2 flex-col grow self-center w-full lg:w-[940px] max-w-[940px] sm:mx-4 overflow-y-scroll text-black dark:text-white bg-white dark:bg-slate/50'>
+      <div ref={contentRef} className='lyrics px-4 grid grid-cols-1 gap-4 md:grid-cols-2 flex-col grow self-center w-full lg:w-[940px] max-w-[940px] sm:mx-4 overflow-y-scroll text-slate dark:text-white bg-white/60 dark:bg-slate/50'>
         <div className='pt-8 col-start-1 sm:col-end-2'>
           <ViewMoreLess index={0} title='Welcome to My Life'>
             <p>Do you wanna fight me?</p>
@@ -134,7 +134,7 @@ const Lyrics = ({ location }) => {
             <p>So neat and tidy</p>
             <p>But now I’m vibin’</p>
             <p>I am lookin’ like the girl who is inside me</p>
-            <p className='mb-1'>In this crop top, black jeans rolled up, and my doc martens</p>
+            <p className='mb-1'>In this crop top, slate jeans rolled up, and my doc martens</p>
             <p>If I’m being honest</p>
             <p>Bopping </p>
             <p>at the bar</p>

@@ -22,10 +22,10 @@ export const ViewMoreLess = ({ children, index, title }: ViewMoreLessProps) => {
       <div ref={contentRef} className={`view-content-${index} px-4 w-full flex flex-col items-start text-start`}>
         {children}
       </div>
-      <label className={`view-more-less view-more-${index} text-center w-full border-black/20 dark:border-white/20 border-t whitespace-nowrap cursor-pointer`} htmlFor={`view-more-less-${index}`} aria-label='toggle view more'>
+      <label className={`view-more-less view-more-${index} text-center w-full border-slate/20 dark:border-white/20 border-t whitespace-nowrap cursor-pointer`} htmlFor={`view-more-less-${index}`} aria-label='toggle view more'>
         <div className='inline-block mr-4' style={flip}>^</div><span className='text-xs'>view</span><div className='inline-block ml-4' style={flip}>^</div>
       </label>
-      <label onClick={scrollToTop} className={`view-more-less view-less-${index} justify-center text-center hidden w-full border-black/20 dark:border-white/20 border-t whitespace-nowrap cursor-pointer`} htmlFor={`view-more-less-${index}`} aria-label='toggle view less'>
+      <label onClick={scrollToTop} className={`view-more-less view-less-${index} justify-center text-center hidden w-full border-slate/20 dark:border-white/20 border-t whitespace-nowrap cursor-pointer`} htmlFor={`view-more-less-${index}`} aria-label='toggle view less'>
         <div className='mr-4'>^</div><span className='text-xs'>close</span><div className='ml-4'>^</div>
       </label>
     </div>

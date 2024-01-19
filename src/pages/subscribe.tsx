@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import PageLayout from '../components/PageLayout';
+import { Button } from '@material-tailwind/react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const Subscribe = ({ location }) => {
@@ -11,7 +12,6 @@ const Subscribe = ({ location }) => {
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
-  const [helperText, setHelperText] = useState('you can opt-out anytime');
 
   const qwinn_subscribed = 'qwinn-subscribed';
   useEffect(() => {
@@ -50,6 +50,7 @@ const Subscribe = ({ location }) => {
   const handleError = (err) => {
     console.error(err);
     setInputError(err);
+    setIsDisabled(true);
   };
 
   const signup = (e) => {
@@ -86,52 +87,61 @@ const Subscribe = ({ location }) => {
 
   return (
     <PageLayout currentPathname={location.pathname}>
-      {/* <div className='flex flex-col items-center w-full'>
-        <div className='flex flex-col items-center lg:w-[940px] max-w-[940px] mx-4'>
-        </div>
-      </div> */}
-      <div>
-        <h1>
-          Sign up to our mailing list to catch all the latest on upcoming
-          releases and more!
-        </h1>
-        <div>
-          <form ref={formRef} onSubmit={signup}>
-            <input
-              type='text'
-              placeholder='first name'
-              name='personName'
-              value={personName}
-              onChange={updateValue}
-              minLength={3}
-              required
-            />
-            <input
-              type='text'
-              placeholder='last name'
-              name='personLastName'
-              value={personLastName}
-              onChange={updateValue}
-              minLength={3}
-              required
-            />
-            <input
-              type='email'
-              placeholder='email'
-              name='personEmail'
-              value={personEmail}
-              onChange={updateValue}
-              required
-            />
-            {inputError && <p>{`${inputError}`}</p>}
-            {messageSent && <p>{messageSent}</p>}
-            {!inputError && !messageSent && (
-              <p>{helperText}</p>
-            )}
-            <div>
-              <input type='submit' value='subscribe' disabled={isDisabled} />
-            </div>
-          </form>
+      <div className='flex flex-col grow self-center justify-center w-full lg:w-[940px] max-w-[940px] sm:mx-4'>
+        <div className='flex justify-center bg-white/60 dark:bg-slate/50 rounded'>
+          <div className='flex flex-col items-center p-8 text-slate dark:text-white w-[300px]'>
+            <p className='text-center mb-2'>
+              Sign up to our mailing list to catch all the latest, including news on upcoming releases, and more!
+            </p>
+            <form ref={formRef} onSubmit={signup}>
+              <div className='flex flex-col mx-auto'>
+                <input
+                  className='px-8 py-2 mb-2 rounded bg-slate/20 dark:bg-white/40 placeholder-slate dark:placeholder-white'
+                  type='text'
+                  placeholder='first name'
+                  name='personName'
+                  value={personName}
+                  onChange={updateValue}
+                  minLength={3}
+                  required
+                />
+                <input
+                  className='px-8 py-2 mb-2 rounded bg-slate/20 dark:bg-white/40 placeholder-slate dark:placeholder-white'
+                  type='text'
+                  placeholder='last name'
+                  name='personLastName'
+                  value={personLastName}
+                  onChange={updateValue}
+                  minLength={3}
+                  required
+                />
+                <input
+                  className='px-8 py-2 mb-2 rounded bg-slate/20 dark:bg-white/40 placeholder-slate dark:placeholder-white'
+                  type='email'
+                  placeholder='email'
+                  name='personEmail'
+                  value={personEmail}
+                  onChange={updateValue}
+                  required
+                />
+              </div>
+              {inputError && <p className='text-red mb-2'>{`${inputError}`}</p>}
+              {messageSent && <p className='mb-2'>{messageSent}</p>}
+              {!inputError && !messageSent && (
+                <p className='text-center text-sm mb-2'>( you can opt-out anytime )</p>
+              )}
+              <div className='flex justify-center'>
+                <Button
+                  className='dark:border dark:border-white'
+                  type='submit'
+                  value='subscribe'
+                  disabled={isDisabled}
+                >
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </PageLayout>

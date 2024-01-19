@@ -5,7 +5,7 @@ const Bio = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow self-center justify-center w-full lg:w-[940px] max-w-[940px] sm:mx-4'>
-        <p className='overflow-y-scroll text-start p-4 rounded text-black dark:text-white bg-white dark:bg-slate/50'>
+        <p className='overflow-y-scroll text-start p-4 sm:p-8 rounded text-slate dark:text-white bg-white/60 dark:bg-slate/50'>
           Britt McQuinn (qwinn) is an award-winning Canadian East Coast
           singer/songwriter. Her early musical influences of film and video game
           soundtracks have shaped the synth-pop sound that audiences know today.

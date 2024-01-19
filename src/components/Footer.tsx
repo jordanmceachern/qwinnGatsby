@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Footer = () => (
-  <div className='z-20 bg-white dark:bg-slate shadow shadow-black w-full py-2 flex justify-center'>
+  <div className='z-20 bg-white dark:bg-slate shadow shadow-slate w-full py-2 flex justify-center'>
     <div className='w-full flex flex-wrap justify-center items-center max-w-3xl mx-6 sm:mx-0'>
       {[
         {
