@@ -18,18 +18,16 @@ const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
         <MetaData />
         <Navigation currentRoutename={currentRoutename} />
         <div
-          className='main-content z-10 flex flex-col grow overflow-y-auto'
+          className='main-content z-10 flex flex-col grow overflow-y-auto bg-no-repeat bg-cover'
           style={{
-            backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675637511/qwinn/qwinn_awmtfe.jpg)',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
+            backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,c_crop,ar_16:9/v1675637511/qwinn/qwinn_awmtfe.jpg)',
             backgroundPosition: 'center center'
           }}>
           {children ? (children) : null}
         </div>
         <Footer />
       </div>
-    </ErrorBoundary >
+    </ErrorBoundary>
   );
 };
 
