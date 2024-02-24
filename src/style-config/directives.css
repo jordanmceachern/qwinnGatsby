@@ -75,7 +75,9 @@ h2 {
 .view-content-4,
 .view-content-5,
 .view-content-6,
-.view-content-7 {
+.view-content-7,
+.view-content-8,
+.view-content-9 {
   text-overflow: ellipsis;
   overflow-y: hidden;
   height: 0;
@@ -97,7 +99,9 @@ h2 {
 #view-more-less-4:checked ~ .view-content-4,
 #view-more-less-5:checked ~ .view-content-5,
 #view-more-less-6:checked ~ .view-content-6,
-#view-more-less-7:checked ~ .view-content-7 {
+#view-more-less-7:checked ~ .view-content-7,
+#view-more-less-8:checked ~ .view-content-8,
+#view-more-less-9:checked ~ .view-content-9 {
   -webkit-line-clamp: unset;
   text-overflow: initial;
   height: 500px;
@@ -116,7 +120,9 @@ h2 {
 #view-more-less-4:checked ~ .view-less-4,
 #view-more-less-5:checked ~ .view-less-5,
 #view-more-less-6:checked ~ .view-less-6,
-#view-more-less-7:checked ~ .view-less-7 {
+#view-more-less-7:checked ~ .view-less-7,
+#view-more-less-8:checked ~ .view-less-8,
+#view-more-less-9:checked ~ .view-less-9 {
   display: flex;
 }
 
@@ -127,6 +133,8 @@ h2 {
 #view-more-less-4:checked ~ .view-more-4,
 #view-more-less-5:checked ~ .view-more-5,
 #view-more-less-6:checked ~ .view-more-6,
-#view-more-less-7:checked ~ .view-more-7 {
+#view-more-less-7:checked ~ .view-more-7,
+#view-more-less-8:checked ~ .view-more-8,
+#view-more-less-9:checked ~ .view-more-9 {
   display: none;
 }

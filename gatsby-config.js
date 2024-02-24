@@ -1,10 +1,3 @@
-const mailchimp = require('@mailchimp/mailchimp_marketing');
-
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_KEY,
-  server: process.env.DC,
-});
-
 module.exports = {
   siteMetadata: {
     title: 'qwinn',
@@ -29,13 +22,5 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint:
-          'https://qwinn.us11.list-manage.com/subscribe/post?u=8b781f0a06ff35e2ba19fb3d8&amp;id=2b4eac9494&amp;f_id=00f2a3e0f0', // string; add your Mail Chimp list endpoint here
-        timeout: 3500,
-      },
-    },
   ],
 };
