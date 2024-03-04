@@ -2245,6 +2245,10 @@ video {
   --tw-gradient-to: #26a69a var(--tw-gradient-to-position);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-clip-border {
   background-clip: border-box;
 }
@@ -2252,6 +2256,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
